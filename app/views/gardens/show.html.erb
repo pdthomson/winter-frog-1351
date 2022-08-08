@@ -1,0 +1,9 @@
+<h1><%= "#{@garden.name}'s Show page" %></h1>
+
+<div id="garden">
+  <% @garden.plots.flat_map do |plant| %>
+  <ol>
+    <%= plant.unique_plants.compact %>
+  </ol>
+  <% end %>
+</div>
